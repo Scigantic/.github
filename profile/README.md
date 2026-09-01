@@ -19,6 +19,7 @@ The packages in this org are the query layer underneath that platform, released 
 | [scigantic-chembl](https://github.com/Scigantic/scigantic-chembl) | Query ChEMBL directly from a public S3 mirror with DuckDB, no local database |
 | [scigantic-bindingdb](https://github.com/Scigantic/scigantic-bindingdb) | Query BindingDB the same way, including a live cross-reference bridge into ChEMBL |
 | [scigantic-pubchem](https://github.com/Scigantic/scigantic-pubchem) | Live PubChem client with throttle-aware retry, BioAssay/gene/protein/Tox21 coverage, and caching PubChemPy doesn't have |
+| [scigantic-comptox](https://github.com/Scigantic/scigantic-comptox) | Query EPA's ToxCast bioactivity data from a public S3 mirror, plus live Chemical/Hazard/Exposure lookups over EPA's own CCTE API |
 
 ## File formats & agent tooling
 
@@ -29,7 +30,7 @@ The packages in this org are the query layer underneath that platform, released 
 
 ```
 pip install scigantic-empiar scigantic-emdb scigantic-wwpdb \
-            scigantic-chembl scigantic-bindingdb scigantic-pubchem \
+            scigantic-chembl scigantic-bindingdb scigantic-pubchem scigantic-comptox \
             scigantic-headers scigantic-mcp
 ```
 
