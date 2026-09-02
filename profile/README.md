@@ -11,6 +11,7 @@ The packages in this org are the query layer underneath that platform, released 
 | [scigantic-empiar](https://github.com/Scigantic/scigantic-empiar) | Stream any of ~3,000 EMPIAR cryo-EM datasets (8.9 PiB) over parallel HTTP range reads, nothing downloaded |
 | [scigantic-emdb](https://github.com/Scigantic/scigantic-emdb) | Search all 60,895 EMDB structures by protein, organism, resolution, molecular weight, or PDB cross-reference |
 | [scigantic-wwpdb](https://github.com/Scigantic/scigantic-wwpdb) | Fetch any of ~45,000 wwPDB Chemical Component Dictionary ligands and monomers by id, no download |
+| [scigantic-cryoet](https://github.com/Scigantic/scigantic-cryoet) | Search ~370 CZ CryoET Data Portal tomography datasets by organism, sample type, disease, or annotation coverage |
 
 ## Chemistry & bioactivity
 
@@ -29,7 +30,7 @@ The packages in this org are the query layer underneath that platform, released 
 | [scigantic-mcp](https://github.com/Scigantic/scigantic-mcp) | MCP server for the Scigantic archive catalog: search thousands of datasets and get LLM-ready schema cards without downloading anything |
 
 ```
-pip install scigantic-empiar scigantic-emdb scigantic-wwpdb \
+pip install scigantic-empiar scigantic-emdb scigantic-wwpdb scigantic-cryoet \
             scigantic-chembl scigantic-bindingdb scigantic-pubchem scigantic-comptox \
             scigantic-headers scigantic-mcp
 ```
