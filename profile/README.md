@@ -21,6 +21,7 @@ The packages in this org are the query layer underneath that platform, released 
 | [scigantic-bindingdb](https://github.com/Scigantic/scigantic-bindingdb) | Query BindingDB the same way, including a live cross-reference bridge into ChEMBL |
 | [scigantic-pubchem](https://github.com/Scigantic/scigantic-pubchem) | Live PubChem client with throttle-aware retry, BioAssay/gene/protein/Tox21 coverage, and caching PubChemPy doesn't have |
 | [scigantic-comptox](https://github.com/Scigantic/scigantic-comptox) | Query EPA's ToxCast bioactivity data from a public S3 mirror, plus live Chemical/Hazard/Exposure lookups over EPA's own CCTE API |
+| [scigantic-deeppk](https://github.com/Scigantic/scigantic-deeppk) | Client for Deep-PK's small-molecule ADMET/toxicity prediction API, plus a mirrored CYP450 inhibitor/substrate reference dataset |
 
 ## File formats & agent tooling
 
@@ -32,7 +33,7 @@ The packages in this org are the query layer underneath that platform, released 
 ```
 pip install scigantic-empiar scigantic-emdb scigantic-wwpdb scigantic-cryoet \
             scigantic-chembl scigantic-bindingdb scigantic-pubchem scigantic-comptox \
-            scigantic-headers scigantic-mcp
+            scigantic-deeppk scigantic-headers scigantic-mcp
 ```
 
 Every package here is MIT or MIT-0 licensed, with its own README, tests, and CI. Issues and PRs welcome.
