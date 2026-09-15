@@ -30,6 +30,12 @@ The packages in this org are the query layer underneath that platform, released 
 |---|---|
 | [scigantic-bil](https://github.com/Scigantic/scigantic-bil) | Search all 14,000+ Brain Image Library datasets (6 PB of BICCN brain microscopy) and read light-sheet, fMOST and STPT volumes over HTTP: one slice, one thumbnail, or an OME-Zarr level, nothing downloaded |
 
+## Cancer genomics & imaging
+
+| Package | What it does |
+|---|---|
+| [scigantic-nci](https://github.com/Scigantic/scigantic-nci) | NCI Genomic Data Commons as per-project clinical, expression, mutation, copy-number, miRNA, RPPA and methylation tables, and the Imaging Data Commons as per-collection series indexes with a sample DICOM series per modality, read from public S3 with no credentials |
+
 ## File formats & agent tooling
 
 | Package | What it does |
@@ -40,7 +46,7 @@ The packages in this org are the query layer underneath that platform, released 
 ```
 pip install scigantic-empiar scigantic-emdb scigantic-wwpdb scigantic-cryoet \
             scigantic-chembl scigantic-bindingdb scigantic-pubchem scigantic-comptox \
-            scigantic-deeppk scigantic-surechembl scigantic-bil scigantic-headers scigantic-mcp
+            scigantic-deeppk scigantic-surechembl scigantic-bil scigantic-nci scigantic-headers scigantic-mcp
 ```
 
 Every package here is MIT or MIT-0 licensed, with its own README, tests, and CI. Issues and PRs welcome.
