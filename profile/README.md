@@ -29,6 +29,7 @@ The packages in this org are the query layer underneath that platform, released 
 | Package | What it does |
 |---|---|
 | [scigantic-bil](https://github.com/Scigantic/scigantic-bil) | Search all 14,000+ Brain Image Library datasets (6 PB of BICCN brain microscopy) and read light-sheet, fMOST and STPT volumes over HTTP: one slice, one thumbnail, or an OME-Zarr level, nothing downloaded |
+| [scigantic-facebase](https://github.com/Scigantic/scigantic-facebase) | Search FaceBase's ~1,070 open craniofacial datasets and read zipped micro-CT scans slice by slice over HTTP, with the dataset citation FaceBase asks for. Open-access data only, nothing mirrored |
 
 ## Cancer genomics & imaging
 
@@ -46,7 +47,7 @@ The packages in this org are the query layer underneath that platform, released 
 ```
 pip install scigantic-empiar scigantic-emdb scigantic-wwpdb scigantic-cryoet \
             scigantic-chembl scigantic-bindingdb scigantic-pubchem scigantic-comptox \
-            scigantic-deeppk scigantic-surechembl scigantic-bil scigantic-nci scigantic-headers scigantic-mcp
+            scigantic-deeppk scigantic-surechembl scigantic-bil scigantic-facebase scigantic-nci scigantic-headers scigantic-mcp
 ```
 
 Every package here is MIT or MIT-0 licensed, with its own README, tests, and CI. Issues and PRs welcome.
