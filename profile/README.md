@@ -43,11 +43,12 @@ The packages in this org are the query layer underneath that platform, released 
 |---|---|
 | [scigantic-headers](https://github.com/Scigantic/scigantic-headers) | Decode scientific file headers (cryo-EM, imaging, flow cytometry, mass spec, sequencing, structural biology) into typed fields. Zero dependencies. |
 | [scigantic-mcp](https://github.com/Scigantic/scigantic-mcp) | MCP server for the Scigantic archive catalog: search thousands of datasets and get LLM-ready schema cards without downloading anything |
+| [scigantic-cards](https://github.com/Scigantic/scigantic-cards) | A small data card format and linter for LLM agents: record what differs from the well-known dataset, how big it is, and how to open it. JSON Schema included. Zero dependencies. |
 
 ```
 pip install scigantic-empiar scigantic-emdb scigantic-wwpdb scigantic-cryoet \
             scigantic-chembl scigantic-bindingdb scigantic-pubchem scigantic-comptox \
-            scigantic-deeppk scigantic-surechembl scigantic-bil scigantic-facebase scigantic-nci scigantic-headers scigantic-mcp
+            scigantic-deeppk scigantic-surechembl scigantic-bil scigantic-facebase scigantic-nci scigantic-headers scigantic-mcp scigantic-cards
 ```
 
 Every package here is MIT or MIT-0 licensed, with its own README, tests, and CI. Issues and PRs welcome.
