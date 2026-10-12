@@ -43,7 +43,7 @@ The packages in this org are the query layer underneath that platform, released 
 |---|---|
 | [scigantic-headers](https://github.com/Scigantic/scigantic-headers) | Decode scientific file headers (cryo-EM, imaging, flow cytometry, mass spec, sequencing, structural biology) into typed fields. Zero dependencies. |
 | [scigantic-mcp](https://github.com/Scigantic/scigantic-mcp) | MCP server for the Scigantic archive catalog: search thousands of datasets and get LLM-ready schema cards without downloading anything |
-| [scigantic-cards](https://github.com/Scigantic/scigantic-cards) | A small data card format and linter for LLM agents: record what differs from the well-known dataset, how big it is, and how to open it. JSON Schema included. Zero dependencies. |
+| [scigantic-cards](https://github.com/Scigantic/scigantic-cards) | A JSON format for describing a dataset to an LLM agent, a linter for it, and `init` to draft a card from a folder or bucket (file counts, sizes, CSV columns, decoded file headers). `verify` runs the card's snippets to check they work. JSON Schema included. Zero dependencies. |
 
 ```
 pip install scigantic-empiar scigantic-emdb scigantic-wwpdb scigantic-cryoet \
