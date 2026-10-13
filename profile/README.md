@@ -37,6 +37,12 @@ The packages in this org are the query layer underneath that platform, released 
 |---|---|
 | [scigantic-nci](https://github.com/Scigantic/scigantic-nci) | NCI Genomic Data Commons as per-project clinical, expression, mutation, copy-number, miRNA, RPPA and methylation tables, and the Imaging Data Commons as per-collection series indexes with a sample DICOM series per modality, read from public S3 with no credentials |
 
+## Comparative genomics
+
+| Package | What it does |
+|---|---|
+| [scigantic-ucsc](https://github.com/Scigantic/scigantic-ucsc) | Conservation scores (phyloP, phastCons), nine-species hg38 multiz alignment slices, TOGA gene-loss annotations and assembly lists from UCSC's public S3 bucket, read by byte range with no download |
+
 ## File formats & agent tooling
 
 | Package | What it does |
@@ -48,7 +54,7 @@ The packages in this org are the query layer underneath that platform, released 
 ```
 pip install scigantic-empiar scigantic-emdb scigantic-wwpdb scigantic-cryoet \
             scigantic-chembl scigantic-bindingdb scigantic-pubchem scigantic-comptox \
-            scigantic-deeppk scigantic-surechembl scigantic-bil scigantic-facebase scigantic-nci scigantic-headers scigantic-mcp scigantic-cards
+            scigantic-deeppk scigantic-surechembl scigantic-bil scigantic-facebase scigantic-nci scigantic-ucsc scigantic-headers scigantic-mcp scigantic-cards
 ```
 
 Every package here is MIT or MIT-0 licensed, with its own README, tests, and CI. Issues and PRs welcome.
