@@ -13,6 +13,7 @@ The packages in this org are the query layer underneath that platform, released 
 | [scigantic-wwpdb](https://github.com/Scigantic/scigantic-wwpdb) | Fetch any of ~45,000 wwPDB Chemical Component Dictionary ligands and monomers by id, no download |
 | [scigantic-cryoet](https://github.com/Scigantic/scigantic-cryoet) | Search ~370 CZ CryoET Data Portal tomography datasets by organism, sample type, disease, or annotation coverage |
 | [scigantic-msa](https://github.com/Scigantic/scigantic-msa) | Get a protein MSA once from the ColabFold MMseqs2 server, or bring your own A3M, and write the input files for AlphaFold 3, Boltz, Chai-1, ColabFold, OpenFold3 or Protenix. Zero dependencies. |
+| [scigantic-alphafold](https://github.com/Scigantic/scigantic-alphafold) | Read a single AlphaFold DB v6 structure by UniProt accession with one HTTP range request against EBI's bulk tars. Covers Swiss-Prot plus 46 proteomes. No mirror, no account, zero dependencies. |
 
 ## Chemistry & bioactivity
 
@@ -55,7 +56,7 @@ The packages in this org are the query layer underneath that platform, released 
 ```
 pip install scigantic-empiar scigantic-emdb scigantic-wwpdb scigantic-cryoet \
             scigantic-chembl scigantic-bindingdb scigantic-pubchem scigantic-comptox \
-            scigantic-deeppk scigantic-surechembl scigantic-bil scigantic-facebase scigantic-nci scigantic-ucsc scigantic-msa scigantic-headers scigantic-mcp scigantic-cards
+            scigantic-deeppk scigantic-surechembl scigantic-bil scigantic-facebase scigantic-nci scigantic-ucsc scigantic-msa scigantic-alphafold scigantic-headers scigantic-mcp scigantic-cards
 ```
 
 Every package here is MIT or MIT-0 licensed, with its own README, tests, and CI. Issues and PRs welcome.
